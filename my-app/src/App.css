@@ -59,7 +59,7 @@ nav{
   font-size: 12px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 421px) {
   .footer{
     justify-content: center;
     padding: 0 5px;
@@ -156,15 +156,16 @@ nav{
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 421px) {
   .homepage{
     padding: 0 10px 50px 10px;
+    gap: 20px;
   }
   .heading-light, .heading-bold, .heading-outline{
-    font-size: 24px;
+    font-size: 32px;
   }
   .banner-img{
-    width: 200px;
+    width: 300px;
   }
   
 }
@@ -183,25 +184,28 @@ nav{
 .aboutpage > img{
   width: 600px;
 }
-.about-description > h1 > span:nth-child(1){
+.about-description > h1{
+  text-align: center;
+}
+.about-description > h1 > span:nth-child(1), .certifications > h1 > span:nth-child(1){
   font-family: 'Londrina Solid', sans-serif;
   font-size: 68px;
   font-weight: 100;
   letter-spacing: 2px;
 }
-.about-description > h1 > span:nth-child(2){
+.about-description > h1 > span:nth-child(2), .certifications > h1 > span:nth-child(2){
   font-family: 'Londrina Solid', sans-serif;
   font-size: 68px;
   font-weight: 900;
   letter-spacing: 2px;
 }
-.about-description > p{
-  width: 700px;
+.about-description > p, .certifications > p{
+  width: 600px;
   height: 100%;
 }
 
 @media screen and (max-width: 1369px){
-  .about-description > h1{
+  .about-description > h1, .certifications > h1{
     text-align: center;
   }
   .aboutpage{
@@ -219,7 +223,8 @@ nav{
     
   }
 
-  .about-description > h1{
+  .about-description > h1
+ {
     margin: 0;
   }
   .about-description > h1 > span:nth-child(1),
@@ -236,18 +241,6 @@ nav{
   }
 }
 @media screen and (max-width: 399px){
-  .aboutpage{
-    gap: 30px;
-    
-  }
-  .about-description > h1{
-    margin: 0;
-  }
-  .about-description > h1 > span:nth-child(1),
-  .about-description > h1 > span:nth-child(2){
-    font-size: 48px;
-    
-  }
   .aboutpage > img{
     width: 280px;
   }
@@ -275,17 +268,17 @@ nav{
   text-align: center;
 
 }
-.skills > h1 {
+.skills > h1,  .certifications > h2{
   text-align: center;
   padding: 0 0 10px 0;
 }
-.skills > h1 > span:nth-child(1){
+.skills > h1 > span:nth-child(1), .certifications > h2 > span:nth-child(1){
   font-family: 'Londrina Solid', sans-serif;
   font-size: 68px;
   font-weight: 100;
   letter-spacing: 2px;
 }
-.skills > h1 > span:nth-child(2){
+.skills > h1 > span:nth-child(2), .certifications > h2 > span:nth-child(2){
   font-family: 'Londrina Solid', sans-serif;
   font-size: 68px;
   font-weight: 900;
@@ -314,6 +307,25 @@ margin: 16px 0;
   color: #fff;
   transition: transform 0.3s;
   transform: translateY(-5px);
+}
+
+@media (max-width: 421px) {
+  .skills > h1 > span:nth-child(2), .certifications > h2 > span:nth-child(2){
+    font-size: 38px;
+  }
+  .skills > h1 > span:nth-child(1), .certifications > h2 > span:nth-child(1){
+    font-size: 38px;
+  }
+  .skills > .skills-content > div{
+    width: 150px;
+    height: 150px;
+  }
+  .skills-content > div > i{
+    font-size: 46px;
+  }
+  .skills-content > div > h2{
+    font-size: 18px;
+  }
 }
 
 
@@ -426,7 +438,7 @@ margin: 16px 0;
     width: 300px;
   }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 421px){
   .form-content > .input-form{
     margin: 10px 0;
     width: 260px;
@@ -517,7 +529,8 @@ margin: 16px 0;
 .project2-container > img,
 .project3-container > img{
   border-radius: 10px;
-  box-shadow: 0px 1px 7px 0px #5854545e
+  box-shadow: 0px 1px 7px 0px #5854545e;
+  width: 480px;
 }
 .project-description{
   display: flex;
@@ -565,7 +578,7 @@ margin: 16px 0;
     width: 400px;
   }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 421px){
   .project1-container > img,
   .project2-container > img,
   .project3-container > img{
@@ -575,7 +588,7 @@ margin: 16px 0;
     width: 300px;
   }
   .project-description > strong{
-    font-size: 38px;
+    font-size: 24px;
   }
   .work-projects h2,
 .personal-projects h2{
@@ -586,14 +599,19 @@ margin: 16px 0;
 .personal-projects h2 > span{
   font-size: 38px;
 }
+.project-description > h3{
+  font-size: 24px;
+}
+.projects h1{
+  text-align: center;
+  font-size: 48px;
+}
+.projects h1 > span{
+  font-size: 48px;
+}
 }
 @media screen and (max-width: 315px){
-  .projects h1{
-    font-size: 48px;
-  }
-  .projects h1 > span{
-    font-size: 48px;
-  }
+
   .project1-container > img,
   .project2-container > img,
   .project3-container > img{

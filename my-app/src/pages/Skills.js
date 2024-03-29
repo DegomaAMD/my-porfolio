@@ -1,8 +1,62 @@
 import React from 'react'
-
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import Container from '@mui/material/Container';
 
 
 function Skills() {
+  const details = [{
+    id: 1,
+    link: 'https://www.freecodecamp.org/certification/fcc215f1c96-4e1d-45b4-adab-aec23d681ef7/responsive-web-design',
+    name: 'freeCodeCamp Responsive Web Design',
+    details: 'February 11, 2024'
+  }, {
+    id: 2,
+    link: 'https://www.freecodecamp.org/certification/fcc215f1c96-4e1d-45b4-adab-aec23d681ef7/responsive-web-design',
+    name: 'freeCodeCamp JavaScript Algorithms and Data Structures (Beta)',
+    details: 'March 12, 2024'
+  }, {
+    id: 3,
+    link: 'https://drive.google.com/file/d/1cz4EF4xkOiBT4oVkAE39dJPNJlx0qYv4/view?usp=drivesdk',
+    name: 'kodeGo Full-stack Web Development',
+    details: 'July 2023'
+  }]
+
+  const skills = [{
+    name: 'HTML5',
+    icon: 'fa-brands fa-html5'
+  },{
+    name: 'CSS3',
+    icon: 'fa-brands fa-css3-alt'
+  },{
+    name: 'JavaScript',
+    icon: 'fa-brands fa-js'
+  },{
+    name: 'Bootstrap',
+    icon: 'fa-brands fa-bootstrap'
+  },{
+    name: 'React JS',
+    icon: 'fa-brands fa-react'
+  },{
+    name: 'Node JS',
+    icon: 'fa-brands fa-node'
+  },{
+    name: 'Wordpress',
+    icon: 'fa-brands fa-wordpress'
+  },{
+    name: 'Git',
+    icon: 'fa-brands fa-git-alt'
+  },
+  {
+    name: 'MySql',
+    icon: 'fa-solid fa-database'
+  },
+]
   return (
     <>
     <div className='spacer'></div>
@@ -12,48 +66,32 @@ function Skills() {
           <span>Skills</span>
         </h1>
         <div className='skills-content'>
-          <div>
-            <i className="fa-brands fa-html5"></i>
-            <h2>HTML</h2>
-          </div>
-          <div>
-            <i className="fa-brands fa-css3-alt"></i>
-            <h2>CSS</h2>
-          </div>
-          <div>
-            <i className="fa-brands fa-js"></i>
-            <h2>JavaScript</h2>
-          </div>
-          <div>
-            <i className="fa-brands fa-bootstrap"></i>
-            <h2>Bootstrap</h2>
-          </div>
-          <div>
-            <i className="fa-brands fa-react"></i>
-            <h2>React JS</h2>
-          </div>
-          <div>
-            <i className="fa-brands fa-node"></i>
-            <h2>Node JS</h2>
-          </div>
-          <div>
-          <i className="fa-brands fa-wordpress"></i>
-          <h2>Wordpress</h2>
-          </div>
-          <div>
-            <i className="fa-brands fa-git-alt"></i>
-            <h2>Git</h2>
-          </div>
-          <div>
-          <i className="fa-brands fa-laravel"></i>
-            <h2>Laravel</h2>
-          </div>
-          <div>
-          <i className="fa-solid fa-database"></i>
-            <h2>MySql</h2>
-          </div>
+          {skills.map(item => 
+            <div>
+              <i className={item.icon}></i>
+              <h2>{item.name}</h2>
+            </div>
+          )}
+          
         </div>
       </div>
+      <div className='certifications'>
+            <h2>
+              <span>My </span>
+              <span>Certificates</span>
+            </h2>
+            <Container maxWidth="sm" sx={{display: {xs: 'block', md: 'flex'},  justifyContent: 'center', alignItems: 'center' }}>
+            {details.map(item => 
+              <Card sx={{ minWidth: 200, margin: '20px', height: 200 }} key={item.name}>
+                <CardContent >
+                <Link className={`item-${item.id}`} href={item.link}>{item.name}</Link>
+                <Typography sx={{marginY: '10px'}}>Completed Date: {item.details}</Typography>
+                </CardContent>
+              </Card>
+            )}            
+            </Container>        
+            
+          </div>
     <div className='spacer'></div>
     </>
     

@@ -20,46 +20,49 @@ function Contact() {
     <>
     <div className='contact-spacer'></div>
         <div className='contact'>
-          <div className='form-content'>
+          <form className='form-content' action="https://formsubmit.co/andriadegoma@gmail.com" method="POST">
             <TextField
             className='input-form'
             required
-                id="username"
-                name='username'
-                label="Name"
+                id="name"
+                name="name"
+                label="Name:"
                 type="text"
-                autoComplete="username"
+                placeholder='Name: (Juan Dela Cruz)'
               />
             <TextField
             className='input-form'
             required
                 id="email"
-                name='email'
-                label="Email"
+                name="email"
+                label="Email:"
                 type="email"
-                autoComplete="email"
+                placeholder='Email: (email@email.com)'
               />
               <TextField
               className='input-form'
               required
                 id="message"
-                name='message'
-                label="How can I help?"
+                name="message"
+                label="Message:"
                 multiline
                 rows={4}
+                placeholder='Message: (I want to hire you!)'
               />
-              
+            
+            <Button type='submit' variant="contained" className='form-btn'>Get in Touch</Button>
+            </form>
+
               <div className='form-socials'>
-                <Button variant="contained" className='form-btn' onClick={sendEmail}>Get in Touch</Button>
                 <div className='socials'>
                 <a href='https://www.facebook.com/andriamae' target='blank'><FacebookIcon className='banner-icon'/></a>
-                    <a href='https://www.linkedin.com/andriamae1019' target='blank'><LinkedInIcon className='banner-icon'/></a>
+                    <a href='https://www.linkedin.com/in/andria-mae-degoma-470aaa147/' target='blank'><LinkedInIcon className='banner-icon'/></a>
                     <a href='https://t.me/andriamae1019' target='blank'><TelegramIcon className='banner-icon'/></a>
                     <a href='https://github.com/DegomaAMD' target='blank'><GitHubIcon className='banner-icon'/></a>
                 </div>
                 
               </div>
-          </div>
+          
         <div className='form-information'>
           <h2>
             Let's <span>talk </span>for
