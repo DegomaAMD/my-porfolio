@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -8,14 +8,6 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 
 function Contact() {
 
-  const [message, setMessage] = useState(null);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-  };
   return (
     <>
         <div className='contact'>

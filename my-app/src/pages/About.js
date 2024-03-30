@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImage from '../assets/img/3.png'
+import aboutImage from '../assets/img/3.webp'
 
 
 function About() {

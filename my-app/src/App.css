@@ -9,13 +9,11 @@
   text-decoration: none;
   color: #fff;
   letter-spacing: 5px;
-  transition: all 0.5s ease-in-out;
 }
 .nav-links{
   text-decoration: none;
   color: #000;
   letter-spacing: 5px;
-  transition: all 0.5s ease-in-out;
   font-weight: 700;
 }
 
@@ -25,15 +23,6 @@ body{
 }
 p{
   font-family: 'Sora', sans-serif;
-}
-
-.fade {
-  opacity: 0;
-  transition: opacity 600ms ease-in;
-}
-
-.fade.active {
-  opacity: 1;
 }
 
 /* NAV COMPONENT */
@@ -174,6 +163,9 @@ nav{
   }
   .home-spacer{
     padding: 50px 0 ;
+  }
+  .homepage .socials{
+    text-align: center;
   }
 }
 

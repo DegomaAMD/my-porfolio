@@ -5,7 +5,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import '../App.css';
-import homeImage from '../assets/img/2.png';
+import homeImage from '../assets/img/2.webp';
 
 
 

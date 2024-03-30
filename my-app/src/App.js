@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './App.css';
 import DrawerAppBar from './components/Navigation';
-import { BrowserRouter as Router, Route, Navigate, Routes, useLocation } from 'react-router-dom';
-import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import { BrowserRouter, Route, Navigate, Routes, useLocation } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Home from './pages/Home';
 import About from './pages/About';
 import Project from './pages/Project';
@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <>
       {/* <Router>
         <DrawerAppBar />
         <Routes>
@@ -26,36 +26,37 @@ function App() {
         </Routes>
         <Footer />
       </Router> */}
-    <Router>
-          <DrawerAppBar />
-          <RoutesWithTransitions />
-          <Footer />
-    </Router>
-      
-    </div>
+    <DrawerAppBar />
+    <BrowserRouter>
+          <RoutesWithTransitions />   
+    </BrowserRouter>
+    <Footer />
+    </>
   );
 }
 
 function RoutesWithTransitions(){
 
   const location = useLocation();
+  console.log(location);
   return(
-    <SwitchTransition mode="out-in">
+    <TransitionGroup component={null}>
       <CSSTransition
           key={location.key}
-          timeout={300}
+          timeout={500}
           classNames="fade" 
       >
           <Routes location={location}>
             <Route exact path="/" element={<Navigate to="/home" />}/>
-            <Route exact path="/home" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/project" element={<Project />} />
-            <Route exact path="/skills" element={<Skills />} />
-            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/Home" element={<Home />} />
+            <Route exact path="/About" element={<About />} />
+            <Route exact path="/Project" element={<Project />} />
+            <Route exact path="/Skills" element={<Skills />} />
+            <Route exact path="/Contact" element={<Contact />} />
           </Routes>  
+        
       </CSSTransition>
-    </SwitchTransition>
+    </TransitionGroup>
   );
 }
 

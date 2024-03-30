@@ -12,7 +12,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
-import logo from '../assets/img/1.png';
+import logo from '../assets/img/1.webp';
 import '../App.css';
 import { Link } from 'react-router-dom';
 

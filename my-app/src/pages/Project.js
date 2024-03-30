@@ -1,17 +1,17 @@
 import React from 'react'
 import Link from '@mui/material/Link';
-import personalProj1 from "../assets/img/bon-cafe.png";
-import personalProj2 from "../assets/img/vizmaker-cafe.png";
-import personalProj3 from "../assets/img/my-portfolio.png";
-import workProj1 from "../assets/img/hb88-la.png";
-import workProj2 from "../assets/img/hb88-ai.png";
-import workProj3 from "../assets/img/hb88-asia.png";
-import workProj4 from "../assets/img/hb88-info.png";
-import workProj5 from "../assets/img/hb88-life.png";
-import workProj6 from "../assets/img/hb88-mobi.png";
-import workProj7 from "../assets/img/hb88-pro.png";
-import workProj8 from "../assets/img/hb88-world.png";
-import workProj9 from "../assets/img/rtp-live.png";
+import personalProj1 from "../assets/img/bon-cafe.webp";
+import personalProj2 from "../assets/img/vizmaker-cafe.webp";
+import personalProj3 from "../assets/img/my-portfolio.webp";
+import workProj1 from "../assets/img/hb88-la.webp";
+import workProj2 from "../assets/img/hb88-ai.webp";
+import workProj3 from "../assets/img/hb88-asia.webp";
+import workProj4 from "../assets/img/hb88-info.webp";
+import workProj5 from "../assets/img/hb88-life.webp";
+import workProj6 from "../assets/img/hb88-mobi.webp";
+import workProj7 from "../assets/img/hb88-pro.webp";
+import workProj8 from "../assets/img/hb88-world.webp";
+import workProj9 from "../assets/img/rtp-live.webp";
 
 function Project() {
 
