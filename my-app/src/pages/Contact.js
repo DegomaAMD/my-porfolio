@@ -49,11 +49,8 @@ function Contact() {
                 rows={4}
                 placeholder='Message: (I want to hire you!)'
               />
-            
-            <Button type='submit' variant="contained" className='form-btn'>Get in Touch</Button>
-            </form>
-
               <div className='form-socials'>
+                <Button type='submit' variant="contained" className='form-btn'>Get in Touch</Button>
                 <div className='socials'>
                 <a href='https://www.facebook.com/andriamae' target='blank'><FacebookIcon className='banner-icon'/></a>
                     <a href='https://www.linkedin.com/in/andria-mae-degoma-470aaa147/' target='blank'><LinkedInIcon className='banner-icon'/></a>
@@ -62,7 +59,7 @@ function Contact() {
                 </div>
                 
               </div>
-          
+          </form>
         <div className='form-information'>
           <h2>
             Let's <span>talk </span>for

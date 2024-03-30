@@ -18,21 +18,21 @@ function Project() {
       const personalProjects = [{
       id: 1,
       projectName: "Bon Cafe",
-      description: "This website is built using HTML5, CSS3, Bootstrap, and JavaScript",
+      description: "This website is built using HTML5, CSS3, Bootstrap, and JavaScript.",
       link: "https://degomaamd.github.io/",
       imgPath: personalProj1
       },
       {
       id: 2,
       projectName: "Vizmaker Cafe",
-      description: "This website is built using ReactJS, Material-UI, and Laravel",
+      description: "This website is built using ReactJS, Material-UI, and Laravel.",
       link: "https://degoma-amd-eju1.vercel.app/Home",
       imgPath: personalProj2
       },
       {
         id: 3,
         projectName: "My Portfolio",
-        description: "This portfolio is built using ReactJS, and Material-UI",
+        description: "This portfolio is built using ReactJS, and Material-UI.",
         link: "https://degomaamd.github.io/",
         imgPath: personalProj3
       }];
@@ -41,7 +41,7 @@ function Project() {
         id: 1,
         count: 1,
         projectName: "HB88.la",
-        description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder",
+        description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
         link: "https://hb88.la/",
         imgPath: workProj1
         },
@@ -49,7 +49,7 @@ function Project() {
         id: 2,
         count: 2,
         projectName: "HB88.ai",
-        description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder",
+        description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
         link: "https://hb88.ai/",
         imgPath: workProj2
         },
@@ -57,7 +57,7 @@ function Project() {
           id: 3,
           count: 1,
           projectName: "HB88.asia",
-          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder",
+          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.asia/",
           imgPath: workProj3
         },
@@ -65,7 +65,7 @@ function Project() {
           id: 4,
           count: 2,
           projectName: "HB88.info",
-          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder",
+          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.info/",
           imgPath: workProj4
           },
@@ -73,7 +73,7 @@ function Project() {
           id: 5,
           count: 1,
           projectName: "HB88.life",
-          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder",
+          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.life/",
           imgPath: workProj5
           },
@@ -81,7 +81,7 @@ function Project() {
           id: 6,
           count: 2,
           projectName: "HB88.mobi",
-          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder",
+          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.mobi/",
           imgPath: workProj6
           },
@@ -89,7 +89,7 @@ function Project() {
           id: 7,
           count: 1,
           projectName: "HB88.pro",
-          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder",
+          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.pro/",
           imgPath: workProj7
           },
@@ -97,7 +97,7 @@ function Project() {
           id: 8,
           count: 2,
           projectName: "HB88.world",
-          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder",
+          description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.world/",
           imgPath: workProj8
           },
@@ -108,7 +108,7 @@ function Project() {
             description: "HB88 RTP Live is a landing page that showcases the best games from various game providers, which players can enjoy on the main website. It also features a lucky roulette where players can win prizes to use on the main website. This page is built using HTML5, CSS3, Bootstrap, and JavaScript.",
             link: "https://hb88.bet/",
             imgPath: workProj9
-          }];
+      }];
 
 
    

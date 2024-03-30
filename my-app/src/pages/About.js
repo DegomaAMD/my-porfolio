@@ -16,9 +16,8 @@ function About() {
               <span>About </span>
               <span>Me</span>
             </h1>
-            <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
-            <p>I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
-            <p>When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
+            <p>I'm passionate about full-stack development, focusing on both React.js and Node.js. My journey in web development began in 2022 after joining the kodeGo Full-stack web development Bootcamp, which kick-started my career. Since then, I've been continuously learning and taking on new projects. I'm dedicated to creating user-friendly and visually appealing digital products, ensuring they are not only good-looking but also perform well. Currently, I'm working on web applications using technologies like Wordpress, Flatsome page builder, HTML, CSS3, Javascript, ReactJS, NodeJS, and MySql.</p>
+            <p>When I'm not coding, I'm probably checking out Facebook, hanging out with my kids and family, or just relaxing. If you need something from me, drop a message on the contact page, and I'll get back to you super fast.</p>
           </div>
           
         </div>
