@@ -413,6 +413,9 @@ margin: 16px 0;
   .form-content{
     align-items: flex-start;
   }
+  .input-form{
+    width: 600px !important;
+  }
   .form-btn{
     margin: 0 !important;
   }
@@ -437,6 +440,18 @@ margin: 16px 0;
   .form-information > p{
     width: 300px;
   }
+  .form-information{
+    padding: 0;
+  }
+  .form-content{
+    align-items: center;
+  }
+  .form-socials{
+    align-items: center;
+  }
+  .input-form{
+    width: 300px !important;
+  }
 }
 @media screen and (max-width: 421px){
   .form-content > .input-form{
@@ -452,6 +467,9 @@ margin: 16px 0;
   }
   .form-information > p{
     width: 260px;
+  }
+  .input-form{
+    width: 260px !important;
   }
 }
 

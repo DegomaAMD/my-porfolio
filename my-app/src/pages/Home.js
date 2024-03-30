@@ -29,7 +29,7 @@ function Home() {
                     <span className='heading-bold'>Philippines</span>
                 </h1>
                 <p className='banner-description'>
-                Entry-level web developer with a passion for crafting user-friendly and responsive websites. Competent in HTML, CSS, JavaScript, and React.js. Dedicated to continuous learning and staying updated with the latest web development trends. Eager to contribute to a team and collaborate on innovative projects.
+                Entry-level web developer with a passion for crafting user-friendly and responsive websites. Competent in HTML, CSS, JavaScript, React.js, and Node.js. Dedicated to continuous learning and staying updated with the latest web development trends. Eager to contribute to a team and collaborate on innovative projects.
                 </p>
                 <div className='socials'>
                     <a href='https://www.facebook.com/andriamae' target='blank'><FacebookIcon className='banner-icon'/></a>
