@@ -8,9 +8,6 @@ function About() {
       <div className='about-spacer'></div>
         <div className='aboutpage'>
           <img src={aboutImage} alt='About ' aria-label='About '/>
-          <div>
-            
-          </div>
           <div className='about-description'>
             <h1>
               <span>About </span>

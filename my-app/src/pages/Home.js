@@ -43,7 +43,6 @@ function Home() {
                 <img src={homeImage} alt='banner img' aria-label='banner img' className='banner-img'/>
             </div>  
         </div>
-        <div className='home-spacer'></div>
     </>   
   )
 }

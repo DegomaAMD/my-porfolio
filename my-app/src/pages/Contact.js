@@ -18,7 +18,6 @@ function Contact() {
   };
   return (
     <>
-    <div className='contact-spacer'></div>
         <div className='contact'>
           <form className='form-content' action="https://formsubmit.co/andriadegoma@gmail.com" method="POST">
             <TextField
@@ -67,12 +66,11 @@ function Contact() {
           <h2>
             Something special
           </h2>
-          <p>If you're interested in working together or have any questions, feel free to leave me a message using the form below. I'd love to hear from you!</p>
+          <p>If you're interested in working together or have any questions, feel free to leave me a message using the form. I'd love to hear from you!</p>
           <h3>andriadegoma@gmail.com</h3>
           <h3>+63 967 3724 189</h3>
         </div>
       </div>
-      <div className='contact-spacer'></div>
     </>
   )
 }

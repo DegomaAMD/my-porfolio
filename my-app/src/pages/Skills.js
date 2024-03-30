@@ -65,24 +65,23 @@ function Skills() {
           <span>My </span>
           <span>Skills</span>
         </h1>
-        <div className='skills-content'>
+        <div  className='skills-content'>
           {skills.map(item => 
-            <div>
+            <div key={item.name}>
               <i className={item.icon}></i>
               <h2>{item.name}</h2>
             </div>
           )}
           
         </div>
-      </div>
-      <div className='certifications'>
+        <div className='certifications'>
             <h2>
               <span>My </span>
               <span>Certificates</span>
             </h2>
             <Container maxWidth="sm" sx={{display: {xs: 'block', md: 'flex'},  justifyContent: 'center', alignItems: 'center' }}>
             {details.map(item => 
-              <Card sx={{ minWidth: 200, margin: '20px', height: 200 }} key={item.name}>
+              <Card sx={{ minWidth: 280, margin: '20px', height: "auto" }} key={item.name}>
                 <CardContent >
                 <Link className={`item-${item.id}`} href={item.link}>{item.name}</Link>
                 <Typography sx={{marginY: '10px'}}>Completed Date: {item.details}</Typography>
@@ -92,7 +91,7 @@ function Skills() {
             </Container>        
             
           </div>
-    <div className='spacer'></div>
+      </div>
     </>
     
   )
