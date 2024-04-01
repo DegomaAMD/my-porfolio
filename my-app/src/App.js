@@ -14,23 +14,13 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      {/* <Router>
-        <DrawerAppBar />
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" />}/>
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </Router> */}
-    <DrawerAppBar />
+    
     <BrowserRouter>
-          <RoutesWithTransitions />   
+      <DrawerAppBar />
+      <RoutesWithTransitions />   
+      <Footer />
     </BrowserRouter>
-    <Footer />
+    
     </>
   );
 }
@@ -38,14 +28,9 @@ function App() {
 function RoutesWithTransitions(){
 
   const location = useLocation();
-  console.log(location);
   return(
-    <TransitionGroup component={null}>
-      <CSSTransition
-          key={location.key}
-          timeout={500}
-          classNames="fade" 
-      >
+    <TransitionGroup>
+      <CSSTransition key={location.key} timeout={500} classNames="fade">
           <Routes location={location}>
             <Route exact path="/" element={<Navigate to="/home" />}/>
             <Route exact path="/Home" element={<Home />} />
@@ -54,7 +39,6 @@ function RoutesWithTransitions(){
             <Route exact path="/Skills" element={<Skills />} />
             <Route exact path="/Contact" element={<Contact />} />
           </Routes>  
-        
       </CSSTransition>
     </TransitionGroup>
   );
