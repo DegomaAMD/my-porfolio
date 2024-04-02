@@ -89,8 +89,9 @@ nav{
   align-items: center;
   flex-flow: row wrap;
   gap: 50px;
-  height: 100vh;
-  min-height: 100vh;
+  height: calc(100vh - 106px);
+  /* min-height: 100vh; */
+  margin-top: 64px;
 }
 .homepage h1{
   margin: 0;
@@ -204,8 +205,8 @@ nav{
   align-items: center;
   flex-flow: row wrap;
   gap: 50px;
-  height: 100vh;
-  min-height: 100vh;
+  height: calc(100vh - 106px);
+  margin-top: 64px;
   
 }
 .aboutpage > img{
@@ -281,7 +282,8 @@ nav{
 /* SKILLS PAGE STYLE */
 .skills{
   padding: 10px;
-  min-height: 100vh;
+  height: calc(100% - 106px);
+  margin-top: 64px;
 }
 .skills > .skills-content > div{
   border: 2px solid #000;
@@ -372,8 +374,9 @@ margin: 16px 0;
   flex-flow: row wrap;
   padding: 10px;
   gap: 10px;
-  height: 100vh;
-  min-height: 100vh;
+  height: calc(100vh - 106px);
+  margin-top: 84px;
+  margin-bottom: 30px;
 
 }
 .form-content{
@@ -435,10 +438,6 @@ margin: 16px 0;
 }
 
 @media screen and (max-width: 1149px){
-  .contact{
-    height: 100%;
-    flex-flow: column-reverse;
-  }
   .contact-spacer{
     padding: 50px;
   }
@@ -455,7 +454,34 @@ margin: 16px 0;
     flex-direction: column;
     align-items: flex-start;
   }
+  .form-information > p{
+    width: 450px;
+  }
 
+  .input-form{
+    width: 450px !important;
+  }
+}
+@media screen and (max-width: 1003px){
+  .form-information > p{
+    width: 400px;
+  }
+
+  .input-form{
+    width: 400px !important;
+  }
+}
+@media screen and (max-width: 953px){
+  .contact{
+    flex-flow: column-reverse;
+  }
+  .form-information > p{
+    width: 600px;
+  }
+
+  .input-form{
+    width: 600px !important;
+  }
 }
 @media screen and (max-width: 599px){
   .form-information > h2 {
@@ -521,7 +547,8 @@ margin: 16px 0;
   align-items: center;
   flex-flow: column;
   padding: 10px;
-  min-height: 100vh;
+  height: calc(100% - 106px);
+  margin-top: 64px;
 }
 .projects h1{
   font-family: 'Londrina Solid', sans-serif;

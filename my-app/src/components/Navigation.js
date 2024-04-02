@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Project', 'Skills', 'Contact'];
 
-function DrawerAppBar(props) {
+const Navigation = (props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -29,23 +29,27 @@ function DrawerAppBar(props) {
   };
 
   const drawer = (
+    
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
         <img src={logo} alt='Website Logo' aria-label='Website Logo' width={50}/>
       <Divider />
-      <List>
+        <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={<Link to={`/${item}`} className='nav-links'>
-                    {item}
-                </Link>} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+            <ListItem key={item} disablePadding>
+              <ListItemButton sx={{ textAlign: 'center' }}>
+              
+                <ListItemText primary={<Link to={`/${item}`} className='nav-links'>
+                      {item}
+                  </Link>} />
+              
+              </ListItemButton>
+            </ListItem>
+          ))}
+          
+        </List>
     </Box>
+  
   );
-
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
@@ -66,16 +70,16 @@ function DrawerAppBar(props) {
               <img src={logo} alt='Website Logo' aria-label='Website Logo' width={50} /> 
             </Link>
           </Box>
-          
-          <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'flex-end', alignItems: 'center', width: '100%' }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff', paddingX: '20px', fontFamily: 'Londrina Solid, sans-serif', fontWeight: '300', letterSpacing: '2px'}}>
-                <Link to={`/${item}`} className='links'>
-                    {item}
-                </Link>
-              </Button>
-            ))}
-          </Box>
+            <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'flex-end', alignItems: 'center', width: '100%' }}>
+              {navItems.map((item) => (
+                <Button key={item} sx={{ color: '#fff', paddingX: '20px', fontFamily: 'Londrina Solid, sans-serif', fontWeight: '300', letterSpacing: '2px'}}>
+                  <Link to={`/${item}`} className='links'>
+                      {item}
+                  </Link>
+                </Button>
+              ))}
+            </Box>
+
           <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
             <Link to={'/home'}>
               <img src={logo} alt='Website Logo' aria-label='Website Logo' width={50} /> 
@@ -103,4 +107,4 @@ function DrawerAppBar(props) {
     </Box>
   );
 }
-export default DrawerAppBar;
+export default Navigation;

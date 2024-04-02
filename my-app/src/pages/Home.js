@@ -13,7 +13,6 @@ import homeImage from '../assets/img/2.webp';
 function Home() {
   return (
     <>
-        <div className='home-spacer'></div>
         <div className='homepage'>
             <div>
                 <h1>

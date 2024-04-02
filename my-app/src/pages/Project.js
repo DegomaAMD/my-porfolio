@@ -114,7 +114,6 @@ function Project() {
    
   return (
     <>
-    <div className='spacer'></div>
     <div className='projects'>
       <h1>
        My <span>Projects</span>
@@ -160,7 +159,6 @@ function Project() {
         </div>
       </div>
     </div>
-    <div className='spacer'></div>
     </>
   )
 }

@@ -56,7 +56,6 @@ function Skills() {
 ]
   return (
     <>
-    <div className='spacer'></div>
       <div className='skills'>
         <h1>
           <span>My </span>
@@ -85,8 +84,7 @@ function Skills() {
                 </CardContent>
               </Card>
             )}            
-            </Container>        
-            
+            </Container>          
           </div>
       </div>
     </>

@@ -5,7 +5,6 @@ import aboutImage from '../assets/img/3.webp'
 function About() {
   return (
     <>
-      <div className='about-spacer'></div>
         <div className='aboutpage'>
           <img src={aboutImage} alt='About ' aria-label='About '/>
           <div className='about-description'>

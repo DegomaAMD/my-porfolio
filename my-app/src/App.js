@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import './App.css';
-import DrawerAppBar from './components/Navigation';
+import Navigation from './components/Navigation';
 import { BrowserRouter, Route, Navigate, Routes, useLocation } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { CSSTransition, TransitionGroup, SwitchTransition } from 'react-transition-group';
 import Home from './pages/Home';
 import About from './pages/About';
 import Project from './pages/Project';
@@ -16,7 +16,7 @@ function App() {
     <>
     
     <BrowserRouter>
-      <DrawerAppBar />
+      <Navigation />
       <RoutesWithTransitions />   
       <Footer />
     </BrowserRouter>
@@ -30,8 +30,8 @@ function RoutesWithTransitions(){
   const location = useLocation();
   return(
     <TransitionGroup>
-      <CSSTransition key={location.key} timeout={500} classNames="fade">
-          <Routes location={location}>
+      <CSSTransition key={location.key} timeout={300} classNames="fade">
+          <Routes>
             <Route exact path="/" element={<Navigate to="/home" />}/>
             <Route exact path="/Home" element={<Home />} />
             <Route exact path="/About" element={<About />} />
