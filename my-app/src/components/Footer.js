@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='footer'>
         <img src={logo} alt='Website Logo' aria-label='Website Logo' width={30} />
-        <p>© 2023 by Andria Mae Degoma</p>
+        <p>© 2024 by Andria Mae Degoma</p>
 
     </div>
   )

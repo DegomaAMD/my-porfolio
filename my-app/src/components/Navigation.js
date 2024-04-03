@@ -65,7 +65,7 @@ const Navigation = (props) => {
           >
             <MenuIcon />
           </IconButton>
-          <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'flex' }}}>
             <Link to={'/home'}>
               <img src={logo} alt='Website Logo' aria-label='Website Logo' width={50} /> 
             </Link>
@@ -80,7 +80,7 @@ const Navigation = (props) => {
               ))}
             </Box>
 
-          <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+          <Box sx={{ display: { xs: 'flex', sm: 'none' }}}>
             <Link to={'/home'}>
               <img src={logo} alt='Website Logo' aria-label='Website Logo' width={50} /> 
             </Link>

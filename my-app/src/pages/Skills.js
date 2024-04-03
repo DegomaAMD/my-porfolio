@@ -80,7 +80,7 @@ function Skills() {
               <Card sx={{ minWidth: 280, margin: '20px', height: "auto" }} key={item.name}>
                 <CardContent >
                 <Link className={`item-${item.id}`} href={item.link}>{item.name}</Link>
-                <Typography sx={{marginY: '10px'}}>Completed Date: {item.details}</Typography>
+                <Typography sx={{marginY: '10px'}}>Completion Date: {item.details}</Typography>
                 </CardContent>
               </Card>
             )}            
