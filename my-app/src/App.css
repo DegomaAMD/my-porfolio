@@ -79,6 +79,21 @@ nav{
 
 }
 
+/* LANGUAGES */
+.language-wrapper{
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+.language{
+  color: #fff;
+  padding: 10px 15px;
+  margin: 0 2px;
+  border-radius: 5px;
+}
 /* FOOTER COMPONENT */
 .footer{
   background-color: #000;

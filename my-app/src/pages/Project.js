@@ -20,21 +20,24 @@ function Project() {
       projectName: "Bon Cafe",
       description: "This website is built using HTML5, CSS3, Bootstrap, and JavaScript.",
       link: "https://degomaamd.github.io/",
-      imgPath: personalProj1
+      imgPath: personalProj1,
+      language: ['html', 'css', 'javascript', 'bootstrap']
       },
       {
       id: 2,
       projectName: "Vizmaker Cafe",
       description: "This website is built using ReactJS, Material-UI, and Laravel.",
       link: "https://degoma-amd-eju1.vercel.app/Home",
-      imgPath: personalProj2
+      imgPath: personalProj2,
+      language: ['react', 'mui', 'laravel']
       },
       {
         id: 3,
         projectName: "My Portfolio",
         description: "This portfolio is built using ReactJS, and Material-UI.",
         link: "https://degomaamd.github.io/",
-        imgPath: personalProj3
+        imgPath: personalProj3,
+        language: ['react', 'mui']
       }];
 
       const   workProjects = [{
@@ -43,7 +46,8 @@ function Project() {
         projectName: "HB88.la",
         description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
         link: "https://hb88.la/",
-        imgPath: workProj1
+        imgPath: workProj1,
+        language: ['html', 'css', 'wordpress', 'flatsome']
         },
         {
         id: 2,
@@ -51,7 +55,8 @@ function Project() {
         projectName: "HB88.ai",
         description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
         link: "https://hb88.ai/",
-        imgPath: workProj2
+        imgPath: workProj2,
+        language: ['html', 'css', 'wordpress', 'flatsome']
         },
         {
           id: 3,
@@ -59,7 +64,8 @@ function Project() {
           projectName: "HB88.asia",
           description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.asia/",
-          imgPath: workProj3
+          imgPath: workProj3,
+          language: ['html', 'css', 'wordpress', 'flatsome']
         },
         {
           id: 4,
@@ -67,7 +73,8 @@ function Project() {
           projectName: "HB88.info",
           description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.info/",
-          imgPath: workProj4
+          imgPath: workProj4,
+          language: ['html', 'css', 'wordpress', 'flatsome']
           },
           {
           id: 5,
@@ -75,7 +82,8 @@ function Project() {
           projectName: "HB88.life",
           description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.life/",
-          imgPath: workProj5
+          imgPath: workProj5,
+          language: ['html', 'css', 'wordpress', 'flatsome']
           },
           {
           id: 6,
@@ -83,7 +91,8 @@ function Project() {
           projectName: "HB88.mobi",
           description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.mobi/",
-          imgPath: workProj6
+          imgPath: workProj6,
+          language: ['html', 'css', 'wordpress', 'flatsome']
           },
           {
           id: 7,
@@ -91,7 +100,8 @@ function Project() {
           projectName: "HB88.pro",
           description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.pro/",
-          imgPath: workProj7
+          imgPath: workProj7,
+          language: ['html', 'css', 'wordpress', 'flatsome']
           },
           {
           id: 8,
@@ -99,7 +109,8 @@ function Project() {
           projectName: "HB88.world",
           description: "This landing page is built using HTML5, CSS3, Wordpress, and Flatsome page builder.",
           link: "https://hb88.world/",
-          imgPath: workProj8
+          imgPath: workProj8,
+          language: ['html', 'css', 'wordpress', 'flatsome']
           },
           {
             id: 9,
@@ -107,10 +118,35 @@ function Project() {
             projectName: "HB88 RTP Live",
             description: "HB88 RTP Live is a landing page that showcases the best games from various game providers, which players can enjoy on the main website. It also features a lucky roulette where players can win prizes to use on the main website. This page is built using HTML5, CSS3, Bootstrap, and JavaScript.",
             link: "https://hb88.bet/",
-            imgPath: workProj9
+            imgPath: workProj9,
+            language: ['html', 'css', 'bootstrap', 'javascript']
       }];
 
+      const languages = {
+        html: { name: 'HTML5', color: '#DC6B19' },
+        css: { name: 'CSS3', color: '#40A2E3' },
+        bootstrap: { name: 'Bootstrap', color: '#7F27FF' },
+        javascript: { name: 'JavaScript', color: '#FFC436' },
+        react: { name: 'ReactJS', color: '#5BBCFF' },
+        mui: { name: 'MUI', color: '#0061c2' },
+        laravel: { name: 'Laravel', color: '#E72929' },
+        mysql: { name: 'MySql', color: '#0174BE' },
+        wordpress: { name: 'Wordpress', color: '#222831' },
+        flatsome: { name: 'Flatsome Theme', color: '#446084' }
+      }
 
+      const findLangArr = (arr) => {
+        console.log(arr)
+       return  arr.map(lang => {
+          const langs = languages[lang];
+          return (
+            <span key={lang} style={{backgroundColor: langs.color}} className='language'>{langs.name}</span>
+          )
+        })
+         
+        }
+
+    
    
   return (
     <>
@@ -130,6 +166,9 @@ function Project() {
                       <strong>0{item.id}</strong>
                       <h3>{item.projectName}</h3>
                       <p>{item.description}</p>
+                      <div>
+                        <div className='language-wrapper'>{findLangArr(item.language)}</div>
+                      </div>
                       <Link href={item.link} underline="none" target="_blank" rel="noopener">
                         <i className="fa-solid fa-up-right-from-square"></i>
                       </Link>
@@ -150,6 +189,9 @@ function Project() {
                 <strong>0{item.id}</strong>
                 <h3>{item.projectName}</h3>
                 <p>{item.description}</p>
+                <div>
+                    <div className='language-wrapper'>{findLangArr(item.language)}</div>
+                </div>
                 <Link href={item.link} underline="none" target="_blank" rel="noopener">
                   <i className="fa-solid fa-up-right-from-square"></i>
                 </Link>
