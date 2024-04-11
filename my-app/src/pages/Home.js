@@ -16,7 +16,7 @@ function Home() {
         <div className='homepage'>
             <div>
                 <h1>
-                    <span className='heading-light'>Hello I'am </span>
+                    <span className='heading-light'>Hello, I'am </span>
                     <span className='heading-bold'>Andria Mae.</span>
                 </h1>
                 <h1>

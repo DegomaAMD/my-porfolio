@@ -344,12 +344,26 @@ nav{
     font-size: 14px;
   }
 }
-@media screen and (max-width: 399px){
+@media screen and (max-width: 455px){
   .aboutpage > img{
     width: 280px;
   }
   .about-description > p{
     width: 290px;
+    font-size: 14px;
+  }
+  .aboutpage{
+    gap: 10px;
+    padding: 0;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 333px){
+  .aboutpage > img{
+    width: 250px;
+  }
+  .about-description > p{
+    width: 250px;
     font-size: 14px;
   }
   .aboutpage{

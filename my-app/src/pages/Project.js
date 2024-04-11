@@ -136,7 +136,6 @@ function Project() {
       }
 
       const findLangArr = (arr) => {
-        console.log(arr)
        return  arr.map(lang => {
           const langs = languages[lang];
           return (
