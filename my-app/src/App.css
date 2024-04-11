@@ -94,6 +94,24 @@ nav{
   margin: 0 2px;
   border-radius: 5px;
 }
+
+@media (max-width: 599px){
+  .language{
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 442px){
+  .language{
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 362px){
+  .language-wrapper{
+    height: 80px;
+  }
+}
 /* FOOTER COMPONENT */
 .footer{
   background-color: #000;
@@ -123,7 +141,7 @@ nav{
   }
 }
 
-/* HOME PAGE STYLE */
+/* START HOME PAGE STYLE */
 .homepage{
   display: flex;
   justify-content: center;
@@ -237,8 +255,9 @@ nav{
   }
   
 }
+/* END HOME PAGE STYLE */
 
-/* ABOUT PAGE STYLE */
+/* START ABOUT PAGE STYLE */
 .aboutpage{
   padding: 0 10px;
   display: flex;
@@ -319,8 +338,9 @@ nav{
     font-size: 14px;
   }
 }
+/* END ABOUT PAGE STYLE */
 
-/* SKILLS PAGE STYLE */
+/* START SKILLS PAGE STYLE */
 .skills{
   padding: 10px;
   height: calc(100% - 106px);
@@ -406,8 +426,9 @@ margin: 16px 0;
     padding: 0;
   }
 }
+/* END SKILLS PAGE STYLE */
 
-/* CONTACT PAGE STYLE */
+/* START CONTACT PAGE STYLE */
 .contact{
   display: flex;
   justify-content: center;
@@ -598,8 +619,9 @@ margin: 16px 0;
     height: 50px !important;
   }
 }
+/* END CONTACT PAGE STYLE */
 
-/* PROJECT PAGE STYLE */
+/* START PROJECT PAGE STYLE */
 .projects{
   font-family: 'Sora', sans-serif;
   display: flex;
@@ -779,4 +801,4 @@ margin: 16px 0;
   font-size: 28px;
   }
 }
-
+/* END PROJECT PAGE STYLE */

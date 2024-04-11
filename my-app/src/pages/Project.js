@@ -18,7 +18,7 @@ function Project() {
       const personalProjects = [{
       id: 1,
       projectName: "Bon Cafe",
-      description: "This website is built using HTML5, CSS3, Bootstrap, and JavaScript.",
+      description: "Bon Cafe is a website for coffee shops designed to help small business owners grow their business and find new customers by displaying their products online. This site is my first mini-project for the KodeGo full-stack web development bootcamp.",
       link: "https://degomaamd.github.io/",
       imgPath: personalProj1,
       language: ['html', 'css', 'javascript', 'bootstrap']
@@ -26,7 +26,7 @@ function Project() {
       {
       id: 2,
       projectName: "Vizmaker Cafe",
-      description: "This website is built using ReactJS, Material-UI, and Laravel.",
+      description: "Vizmaker Cafe is an improved version of the Bon Cafe website for coffee shops. It's my final project for the KodeGo full-stack web development bootcamp. Currently, the site is being updated because the database needs to be set up again.",
       link: "https://degoma-amd-eju1.vercel.app/Home",
       imgPath: personalProj2,
       language: ['react', 'mui', 'laravel']
@@ -34,8 +34,8 @@ function Project() {
       {
         id: 3,
         projectName: "My Portfolio",
-        description: "This portfolio is built using ReactJS, and Material-UI.",
-        link: "https://degomaamd.github.io/",
+        description: "This portfolio showcases my journey as a web developer, highlighting various websites and projects I've developed. It illustrates my use of coding and design skills to create user-friendly and visually appealing websites. Through this portfolio, I aim to share my process of building a website from the ground up, with a focus on delivering high-quality work. Whether you're considering hiring a web developer, searching for inspiration, or simply interested in my work, this collection reflects my dedication to excellence and my growth from having no web development knowledge to where I am today.",
+        link: "https://my-porfolio-sage.vercel.app",
         imgPath: personalProj3,
         language: ['react', 'mui']
       }];
