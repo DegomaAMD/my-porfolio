@@ -12,11 +12,14 @@ import workProj6 from "../assets/img/hb88-mobi.webp";
 import workProj7 from "../assets/img/hb88-pro.webp";
 import workProj8 from "../assets/img/hb88-world.webp";
 import workProj9 from "../assets/img/rtp-live.webp";
+import workProj10 from "../assets/img/lucky-prediction.webp";
+import workProj11 from "../assets/img/nohu-bot.webp";
 
 function Project() {
 
       const personalProjects = [{
       id: 1,
+      count: 1,
       projectName: "Bon Cafe",
       description: "Bon Cafe is a website for coffee shops designed to help small business owners grow their business and find new customers by displaying their products online. This site is my first mini-project for the KodeGo full-stack web development bootcamp.",
       link: "https://degomaamd.github.io/",
@@ -25,6 +28,7 @@ function Project() {
       },
       {
       id: 2,
+      count: 2,
       projectName: "Vizmaker Cafe",
       description: "Vizmaker Cafe is an improved version of the Bon Cafe website for coffee shops. It's my final project for the KodeGo full-stack web development bootcamp. Currently, the site is being updated because the database needs to be set up again.",
       link: "https://degoma-amd-eju1.vercel.app/Home",
@@ -33,6 +37,7 @@ function Project() {
       },
       {
         id: 3,
+        count: 1,
         projectName: "My Portfolio",
         description: "This portfolio showcases my journey as a web developer, highlighting various websites and projects I've developed. It illustrates my use of coding and design skills to create user-friendly and visually appealing websites. Through this portfolio, I aim to share my process of building a website from the ground up, with a focus on delivering high-quality work. Whether you're considering hiring a web developer, searching for inspiration, or simply interested in my work, this collection reflects my dedication to excellence and my growth from having no web development knowledge to where I am today.",
         link: "https://my-porfolio-sage.vercel.app",
@@ -120,7 +125,26 @@ function Project() {
             link: "https://hb88.bet/",
             imgPath: workProj9,
             language: ['html', 'css', 'bootstrap', 'javascript']
-      }];
+      },
+      {
+        id: 10,
+        count: 2,
+        projectName: "HB88 Lucky Prediction",
+        description: "HB88 Lucky Prediction gives you a personalized lucky predictions based on your birth date. Visit the site, input your date of birth, and see if you’re fortunate enough to win a surprise reward. Experience a fun and exciting way to find out what luck has in store for you!",
+        link: "https://hb88.money/",
+        imgPath: workProj10,
+        language: ['html', 'css', 'bootstrap', 'javascript']
+    },
+    {
+      id: 11,
+      count: 1,
+      projectName: "Nohu.bot",
+      description: "This landing page is designed to educate you about HB88 and showcase the variety of exciting games we offer. Explore our platform to learn more and find your next favorite game!",
+      link: "https://nohu.bot/",
+      imgPath: workProj11,
+      language: ['html', 'css', 'javascript', 'wordpress', 'flatsome']
+    }
+    ];
 
       const languages = {
         html: { name: 'HTML5', color: '#DC6B19' },
@@ -159,10 +183,10 @@ function Project() {
         </h2>
         <div className='personal-project-content'>
         {personalProjects.map(item => 
-            <div key={`project${item.id}-container`} className={`project${item.id}-container`}>
+            <div key={`project${item.id}-container`} className={`project${item.count}-container`}>
                 <img src={item.imgPath} alt={item.projectName}/>
                   <div className='project-description'>
-                      <strong>0{item.id}</strong>
+                      <strong>{item.id <= 9 ? `0${item.id}` : item.id}</strong>
                       <h3>{item.projectName}</h3>
                       <p>{item.description}</p>
                       <div>
@@ -185,7 +209,7 @@ function Project() {
             <div key={`project${item.id}-container`} className={`project${item.count}-container`}>
               <img src={item.imgPath} alt={item.projectName}/>
               <div className='project-description'>
-                <strong>0{item.id}</strong>
+                <strong>{item.id <= 9 ? `0${item.id}` : item.id}</strong>
                 <h3>{item.projectName}</h3>
                 <p>{item.description}</p>
                 <div>

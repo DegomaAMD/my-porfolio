@@ -709,8 +709,7 @@ margin: 16px 0;
   letter-spacing: 2px;
   margin: 0;
 }
-.project1-container,
-.project3-container{
+.project1-container{
   display: flex;
   justify-content: center;
   align-items: center;
