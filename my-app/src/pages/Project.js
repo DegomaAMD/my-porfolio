@@ -117,18 +117,9 @@ function Project() {
           imgPath: workProj8,
           language: ['html', 'css', 'wordpress', 'flatsome']
           },
-          {
-            id: 9,
-            count: 1,
-            projectName: "HB88 RTP Live",
-            description: "HB88 RTP Live is a landing page that showcases the best games from various game providers, which players can enjoy on the main website. It also features a lucky roulette where players can win prizes to use on the main website. This page is built using HTML5, CSS3, Bootstrap, and JavaScript.",
-            link: "https://hb88.bet/",
-            imgPath: workProj9,
-            language: ['html', 'css', 'bootstrap', 'javascript']
-      },
       {
-        id: 10,
-        count: 2,
+        id: 9,
+        count: 1,
         projectName: "HB88 Lucky Prediction",
         description: "HB88 Lucky Prediction gives you a personalized lucky predictions based on your birth date. Visit the site, input your date of birth, and see if you’re fortunate enough to win a surprise reward. Experience a fun and exciting way to find out what luck has in store for you!",
         link: "https://hb88.money/",
@@ -136,8 +127,8 @@ function Project() {
         language: ['html', 'css', 'bootstrap', 'javascript']
     },
     {
-      id: 11,
-      count: 1,
+      id: 10,
+      count: 2,
       projectName: "Nohu.bot",
       description: "This website is designed to educate you about HB88 and showcase the variety of exciting games we offer. Explore our platform to learn more and find your next favorite game!",
       link: "https://nohu.bot/",
