@@ -139,7 +139,7 @@ function Project() {
       id: 11,
       count: 1,
       projectName: "Nohu.bot",
-      description: "This landing page is designed to educate you about HB88 and showcase the variety of exciting games we offer. Explore our platform to learn more and find your next favorite game!",
+      description: "This website is designed to educate you about HB88 and showcase the variety of exciting games we offer. Explore our platform to learn more and find your next favorite game!",
       link: "https://nohu.bot/",
       imgPath: workProj11,
       language: ['html', 'css', 'javascript', 'wordpress', 'flatsome']
