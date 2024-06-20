@@ -48,8 +48,8 @@ function Project() {
       const   workProjects = [{
         id: 1,
         count: 1,
-        projectName: "HB88.la",
-        description: "This landing page is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
+        projectName: "HB88.ph",
+        description: "This website is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
         link: "https://hb88.la/",
         imgPath: workProj1,
         language: ['html', 'css', 'javascript', 'wordpress', 'flatsome']
@@ -58,7 +58,7 @@ function Project() {
         id: 2,
         count: 2,
         projectName: "HB88.ai",
-        description: "This landing page is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
+        description: "This website is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
         link: "https://hb88.ai/",
         imgPath: workProj2,
         language: ['html', 'css', 'wordpress', 'flatsome']
@@ -67,7 +67,7 @@ function Project() {
           id: 3,
           count: 1,
           projectName: "HB88.asia",
-          description: "This landing page is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
+          description: "This website is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
           link: "https://hb88.asia/",
           imgPath: workProj3,
           language: ['html', 'css', 'javascript', 'wordpress', 'flatsome']
@@ -76,7 +76,7 @@ function Project() {
           id: 4,
           count: 2,
           projectName: "HB88.info",
-          description: "This landing page is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
+          description: "This website is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
           link: "https://hb88.info/",
           imgPath: workProj4,
           language: ['html', 'css', 'javascript', 'wordpress', 'flatsome']
@@ -85,7 +85,7 @@ function Project() {
           id: 5,
           count: 1,
           projectName: "HB88.life",
-          description: "This landing page is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
+          description: "This website is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
           link: "https://hb88.life/",
           imgPath: workProj5,
           language: ['html', 'css', 'javascript', 'wordpress', 'flatsome']
@@ -94,7 +94,7 @@ function Project() {
           id: 6,
           count: 2,
           projectName: "HB88.mobi",
-          description: "This landing page is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
+          description: "This website is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
           link: "https://hb88.mobi/",
           imgPath: workProj6,
           language: ['html', 'css', 'wordpress', 'flatsome']
@@ -103,7 +103,7 @@ function Project() {
           id: 7,
           count: 1,
           projectName: "HB88.pro",
-          description: "This landing page is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
+          description: "This website is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
           link: "https://hb88.pro/",
           imgPath: workProj7,
           language: ['html', 'css', 'javascript', 'wordpress', 'flatsome']
@@ -112,7 +112,7 @@ function Project() {
           id: 8,
           count: 2,
           projectName: "HB88.world",
-          description: "This landing page is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
+          description: "This website is crafted to educate users about HB88, while the blog page keeps them informed with the latest sports news.",
           link: "https://hb88.world/",
           imgPath: workProj8,
           language: ['html', 'css', 'wordpress', 'flatsome']
