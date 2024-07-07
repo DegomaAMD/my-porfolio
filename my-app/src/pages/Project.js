@@ -11,9 +11,10 @@ import workProj5 from "../assets/img/hb88-life.webp";
 import workProj6 from "../assets/img/hb88-mobi.webp";
 import workProj7 from "../assets/img/hb88-pro.webp";
 import workProj8 from "../assets/img/hb88-world.webp";
-import workProj9 from "../assets/img/rtp-live.webp";
 import workProj10 from "../assets/img/lucky-prediction.webp";
 import workProj11 from "../assets/img/nohu-bot.webp";
+import workProj12 from "../assets/img/18hb88.png";
+import workProj13 from "../assets/img/19hb88.png";
 
 function Project() {
 
@@ -134,6 +135,24 @@ function Project() {
       link: "https://nohu.bot/",
       imgPath: workProj11,
       language: ['html', 'css', 'javascript', 'wordpress', 'flatsome']
+    },
+    {
+      id: 11,
+      count: 1,
+      projectName: "19hb88.com",
+      description: "This website is designed to educate you about HB88 and showcase the variety of exciting games we offer. Explore our platform to learn more and find your next favorite game!",
+      link: "https://19hb88.com/",
+      imgPath: workProj12,
+      language: ['html', 'css', 'wordpress', 'flatsome']
+    },
+    {
+      id: 12,
+      count: 2,
+      projectName: "18hb88.com",
+      description: "This website is designed to educate you about HB88 and showcase the variety of exciting games we offer. Explore our platform to learn more and find your next favorite game!",
+      link: "https://18hb88.com/",
+      imgPath: workProj13,
+      language: ['html', 'css', 'wordpress', 'flatsome']
     }
     ];
 
