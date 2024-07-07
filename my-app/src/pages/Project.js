@@ -13,8 +13,8 @@ import workProj7 from "../assets/img/hb88-pro.webp";
 import workProj8 from "../assets/img/hb88-world.webp";
 import workProj10 from "../assets/img/lucky-prediction.webp";
 import workProj11 from "../assets/img/nohu-bot.webp";
-import workProj12 from "../assets/img/18hb88.png";
-import workProj13 from "../assets/img/19hb88.png";
+import workProj12 from "../assets/img/19hb88.png";
+import workProj13 from "../assets/img/18hb88.png";
 
 function Project() {
 
