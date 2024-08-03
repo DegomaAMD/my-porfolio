@@ -79,6 +79,14 @@ nav{
 
 }
 
+/* BUTTON HOVER */
+.banner-icon:hover, .viewResumeBtn:hover, .skills > .skills-content > div:hover{
+  background-color: #000 !important;
+  color: #fff !important;
+  transform: translateY(-5px) !important;
+  transition: transform 0.3s !important;
+}
+
 /* LANGUAGES */
 .language-wrapper{
   height: 50px;
@@ -184,12 +192,7 @@ nav{
   padding: 16px;
   margin: 5px;
 }
-.banner-icon:hover{
-  background-color: #000;
-  color: #fff;
-  transform: translateY(-5px);
-  transition: transform 0.3s;
-}
+
 .img-container{
   text-align: center;
 }
@@ -291,6 +294,20 @@ nav{
   height: 100%;
   text-align: justify ;
 }
+
+.viewResumeBtn{
+  border: 3px solid #000 !important;
+  border-radius: 20px !important;
+  color: #000 !important;
+  width: 100%;
+  padding: 20px 0 !important;
+  font-family: 'Sora', sans-serif !important;
+}
+.viewResumeBtn > i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
 
 @media screen and (max-width: 1369px){
   .about-description > h1, .certifications > h1{
@@ -427,12 +444,6 @@ font-family: 'Sora', sans-serif;
 .skills-content > div > i{
 font-size: 56px;
 margin: 16px 0;
-}
-.skills > .skills-content > div:hover{
-  background-color: #000;
-  color: #fff;
-  transition: transform 0.3s;
-  transform: translateY(-5px);
 }
 
 @media (max-width: 430px) {
